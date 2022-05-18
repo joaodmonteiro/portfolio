@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        font-family: Neue65Medium;
+        font-size: $font-size-big;
+        letter-spacing: calc($font-size-big * 0.045);
+        color:rgba(10, 9, 3, 0.4);
+    }
+
+    .active {
+        color: #0A0903;
+    }
+}
