@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+.container {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(2, 50vw);
+    padding: 10vh $pad-2;
+
+    .picture_container {
+        border-right: 4px solid black;
+        padding: 0 $fs-huge;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .bio_container {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        padding: calc($fs-huge * 0.5) $fs-huge;
+        max-width: 50vw;
+
+        .bio_name {
+            font-family: Neue55Roman;
+            font-size: $fs-huge;
+            letter-spacing: calc($fs-huge * $ls-normal);
+            max-width: 5em;
+            margin-bottom: auto;
+        }
+
+        .bio_title {
+            font-family: Neue65Medium;
+            font-size: $fs-vbig;
+            letter-spacing: calc($fs-vbig * $ls-normal);
+            margin-top: 1em;
+        }
+
+        .bio_location {
+            font-family: Neue35Thin;
+            white-space: nowrap;
+            margin-top: .4em;
+        }
+    }
+}

@@ -1,17 +1,24 @@
 @import './variables.scss';
 
-.nav_list {
-    display: flex;
-    justify-content: space-around;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $pad-2;
 
-    li {
-        font-family: Neue65Medium;
-        font-size: $font-size-big;
-        letter-spacing: calc($font-size-big * 0.045);
-        color:rgba(10, 9, 3, 0.4);
-    }
-
-    .active {
-        color: #0A0903;
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 2/ 4;
+    
+        li {
+            font-family: Neue65Medium;
+            font-size: $fs-big;
+            letter-spacing: calc($fs-big * $ls-normal);
+            color:rgba(10, 9, 3, 0.4);
+        }
+    
+        .active {
+            color: #0A0903;
+        }
     }
 }

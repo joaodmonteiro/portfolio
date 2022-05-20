@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const Nav: NextPage = () => {
   const router = useRouter();
   return (
-    <div>
+    <nav className={styles.container}>
       <ul className={styles.nav_list}>
         <li
           className={router.pathname == "/Projects" ? `${styles.active}` : ""}>
@@ -22,7 +22,7 @@ const Nav: NextPage = () => {
           <Link href="/Contact">CONTACT</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
