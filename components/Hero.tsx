@@ -1,12 +1,12 @@
-import { NextPage } from "next";
 import styles from "../styles/Hero.module.scss";
-import profilepic from "../public/images/profile-pic.png";
 
-const Hero: NextPage = () => {
+const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.picture_container}>
-        <img src="/images/profile-pic.png"></img>
+        <img
+          alt="photo of Joao Monteiro"
+          src="/images/BW_portfolio_pic 2.JPG"></img>
       </div>
       <div className={styles.bio_container}>
         <h1 className={styles.bio_name}>João Monteiro</h1>

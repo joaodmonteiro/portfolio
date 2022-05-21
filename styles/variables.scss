@@ -9,14 +9,20 @@
 }
 
 @font-face {
+    font-family: Neue45Light;
+    src: url(../fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
     font-family: Neue35Thin;
     src: url(../fonts/NeueHaasDisplayThin.ttf);
 }
 
-$fs-huge: clamp(2.6rem, 6vw, 6rem);
-$fs-vbig: clamp(1.6rem, 4vw, 5rem);
-$fs-big: clamp(1.2rem, 2vw, 3rem);
+$fs-huge: clamp(2rem, 6vw, 4rem);
+$fs-vbig: clamp(1.2rem, 3vw, 3rem);
+$fs-big: clamp(1.2rem, 2vw, 2.5rem);
+$fs-med: clamp(1rem, 2vw, 2rem);
 
-$pad-2: 1em;
+$pad-2: 2em;
 
 $ls-normal: 0.045; 

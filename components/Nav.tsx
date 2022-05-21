@@ -1,9 +1,8 @@
-import { NextPage } from "next";
 import Link from "next/link";
 import styles from "../styles/Nav.module.scss";
 import { useRouter } from "next/router";
 
-const Nav: NextPage = () => {
+const Nav = () => {
   const router = useRouter();
   return (
     <nav className={styles.container}>

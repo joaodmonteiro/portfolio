@@ -1,13 +1,19 @@
 @import './variables.scss';
 
 .container {
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: $pad-2;
+    padding: 1em 1.6em;
+    height: 10vh;
+    width: 100%;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    
 
     .nav_list {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         grid-column: 2/ 4;
     
         li {
@@ -15,6 +21,8 @@
             font-size: $fs-big;
             letter-spacing: calc($fs-big * $ls-normal);
             color:rgba(10, 9, 3, 0.4);
+            margin-left: 2em;
+            mix-blend-mode: difference;
         }
     
         .active {
