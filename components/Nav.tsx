@@ -6,6 +6,7 @@ const Nav = () => {
   const router = useRouter();
   return (
     <nav className={styles.container}>
+      <div className={styles.screen}></div>
       <ul className={styles.nav_list}>
         <li
           className={router.pathname == "/Projects" ? `${styles.active}` : ""}>
