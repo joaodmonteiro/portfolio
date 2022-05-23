@@ -16,11 +16,12 @@
         justify-content: space-between;
     
         li {
-            font-family: Neue55Roman;
+            font-family: Neue45Light;
             font-size: $fs-big;
             letter-spacing: calc($fs-big * $ls-normal);
             color: white;
             text-underline-offset: 10px;
+            font-weight: 100;
         }
         .active {
             text-decoration: underline;
