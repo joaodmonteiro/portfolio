@@ -9,8 +9,12 @@ import styles from "../styles/Home.module.scss";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Hero />
-      <Homepage_Projects />
+      <div className={styles.scroll_container}>
+        <Hero />
+        <Homepage_Projects />
+        <Homepage_Projects />
+        <Homepage_Projects />
+      </div>
     </div>
   );
 };
