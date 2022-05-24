@@ -9,6 +9,7 @@
     width: 100%;
     mix-blend-mode: difference;
     background-color: black;
+    z-index: 10;
     
     .nav_list {
         display: flex;
@@ -17,8 +18,8 @@
     
         li {
             font-family: Neue45Light;
-            font-size: $fs-big;
-            letter-spacing: calc($fs-big * $ls-normal);
+            font-size: $fs-med;
+            letter-spacing: calc($fs-med * $ls-normal);
             color: white;
             text-underline-offset: 10px;
             font-weight: 100;

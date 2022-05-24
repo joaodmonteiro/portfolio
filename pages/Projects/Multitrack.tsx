@@ -1,5 +1,6 @@
 import styles from "../../styles/Multitrack.module.scss";
 import { useState, useRef, useMemo, useEffect } from "react";
+import Link from "next/link";
 
 const Multitrack = () => {
   const [image1Styles, setImage1Styles] = useState(`${styles.screenshot}`);
@@ -11,8 +12,8 @@ const Multitrack = () => {
   const options = useMemo(() => {
     return {
       root: null,
-      rootMargin: "400px",
-      threshold: 1,
+      rootMargin: "0px",
+      threshold: 0.8,
     };
   }, []);
 
@@ -46,12 +47,13 @@ const Multitrack = () => {
       <div className={styles.scroll_container}>
         <section className={styles.logo_container}>
           <img alt="Multitrack's logo" src="/images/multitrack_logo.svg" />
+          <img src="/images/arrow_down.svg" alt="" />
         </section>
         <section ref={targetRef} className={styles.screenshots}>
           <div className={styles.screenshots_wrapper}>
             <img
-              className={image1Styles}
-              src="/images/desktop_screenshot1.png"
+              className={image3Styles}
+              src="/images/desktop_screenshot3.png"
               alt=""
             />
             <img
@@ -60,18 +62,94 @@ const Multitrack = () => {
               alt=""
             />
             <img
-              className={image3Styles}
-              src="/images/desktop_screenshot3.png"
+              className={image1Styles}
+              src="/images/desktop_screenshot1.png"
               alt=""
             />
           </div>
         </section>
         <section className={styles.information}>
-          <p>
-            Multitrack is a charity that works with artists and producers to
-            provide fellowships and work placements for underrepresented people
-            in the audio industry.{" "}
-          </p>
+          <div className={styles.description}>
+            <p>
+              Multitrack is a charity that works with artists and producers to
+              provide fellowships and work placements for underrepresented
+              people in the audio industry.{" "}
+            </p>
+            <p>
+              The website serves as the point of contact between the charity and
+              the community.
+            </p>
+            <p>
+              It was built based on the design made by{" "}
+              <a
+                href="https://catarinacoelho.pt/"
+                target="_blank"
+                rel="noreferrer">
+                <span>
+                  <img src="/images/arrow.svg" />
+                  Catarina Coelho
+                </span>
+              </a>
+            </p>
+          </div>
+          <div className={styles.mockup_container}>
+            <div className={styles.android_mockup}>
+              <img src="/images/android_mockup.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.tech}>
+          <h2>Technologies used</h2>
+          <div className={styles.logos_container}>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/html_icon.svg" alt="" />
+              <span>HTML</span>
+            </div>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/css_icon.svg" alt="" />
+              <span>CSS</span>
+            </div>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/react_icon.svg" alt="" />
+              <span>React</span>
+            </div>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/vite_icon.svg" alt="" />
+              <span>Vite</span>
+            </div>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/firebase_icon.svg" alt="" />
+              <span>Firebase</span>
+            </div>
+            <div className={styles.logo_wrapper}>
+              <img src="/images/icons/emailjs_icon.svg" alt="" />
+              <span>EmailJS</span>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.links}>
+          <div className={styles.links_container}>
+            <a
+              href="https://joaodmonteiro.github.io/multitrack/"
+              target="_blank"
+              rel="noreferrer">
+              <div className={styles.website}>
+                <img src="/images/arrow.svg" alt="arrow" />
+                <span>Website</span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/joaodmonteiro/multitrack"
+              target="_blank"
+              rel="noreferrer">
+              <div className={styles.github}>
+                <img src="/images/arrow.svg" alt="arrow" />
+                <span>Github</span>
+              </div>
+            </a>
+          </div>
         </section>
       </div>
     </div>
