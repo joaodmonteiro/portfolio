@@ -99,8 +99,8 @@ const Multitrack = () => {
           </div>
         </section>
 
-        <section className={styles.tech}>
-          <h2>Technologies used</h2>
+        <section className={styles.stack}>
+          <h2>Stack</h2>
           <div className={styles.logos_container}>
             <div className={styles.logo_wrapper}>
               <img src="/images/icons/html_icon.svg" alt="" />

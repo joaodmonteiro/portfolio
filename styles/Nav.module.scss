@@ -4,8 +4,7 @@
     position: fixed;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    padding: 1em 1.6em;
-    height: 10vh;
+    padding: $pad-desktop;
     width: 100%;
     mix-blend-mode: difference;
     background-color: black;
@@ -28,10 +27,10 @@
             text-decoration: underline;
         }
 
-        @media screen and (max-width: 1000px) {
-            grid-column: 1 / 3;
-            grid-row: 1;
-            justify-content: space-around;
-        }
+        // @media screen and (max-width: 1000px) {
+        //     grid-column: 1 / 3;
+        //     grid-row: 1;
+        //     justify-content: space-around;
+        // }
     }
 }
