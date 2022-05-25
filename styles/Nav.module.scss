@@ -2,8 +2,6 @@
 
 .container {
     position: fixed;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
     padding: $pad-desktop;
     width: 100%;
     mix-blend-mode: difference;
@@ -12,8 +10,8 @@
     
     .nav_list {
         display: flex;
-        grid-column: 2 / 3;
-        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 4em;
     
         li {
             font-family: Neue45Light;
@@ -22,7 +20,12 @@
             color: white;
             text-underline-offset: 10px;
             font-weight: 100;
+
+            &:first-child {
+                margin-right: auto;
+            }
         }
+
         .active {
             text-decoration: underline;
         }
