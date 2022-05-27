@@ -6,7 +6,6 @@
     grid-template-columns: repeat(2, 50%);
     padding: $pad-desktop;
     height: 100vh;
-    scroll-snap-align: start;
 
     .picture_container {
         display: flex;

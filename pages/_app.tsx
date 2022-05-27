@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Nav from "../components/Nav";
+import ScrollContainer from "../components/ScrollContainer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

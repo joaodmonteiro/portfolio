@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $pad-desktop;
+    height: 100vh;
 
     .project_container {
         display: flex;
