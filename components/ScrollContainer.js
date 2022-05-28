@@ -13,7 +13,7 @@ const ScrollContainer = (props) => {
   const spacer = useRef(null);
   const container = useRef(null);
   const blocks = useRef([]);
-  const ease = 0.15;
+  const ease = 0.11;
   let yCurrent = 0;
   let yScroll = 0;
   let animationFrame;
@@ -45,7 +45,9 @@ const ScrollContainer = (props) => {
     } else {
       cancelAnimation();
     }
-    setTransform(container.current, "translateY(" + -yCurrent + "px)");
+    if (container.current) {
+      setTransform(container.current, "translateY(" + -yCurrent + "px)");
+    }
     updateElements(blocks.current, yCurrent);
   };
 

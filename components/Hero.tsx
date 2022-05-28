@@ -8,12 +8,11 @@ const Hero = () => {
           alt="photo of Joao Monteiro"
           src="/images/BW_portfolio_pic 2.JPG"></img>
       </div>
-      <div className={styles.bio_container}>
-        <h1 className={styles.bio_name}>João Monteiro</h1>
-        <div className={styles.bio_info}>
-          <div className={styles.bio_title}>Web Developer</div>
-          <div className={styles.bio_location}>Based in London, UK</div>
-        </div>
+      <div className={styles.bio_name}>João Monteiro</div>
+      <div className={styles.bio_info}>Web Developer, Based in London</div>
+      <div className={styles.cta}>
+        <div>View projects</div>
+        <img src="/images/arrow_down.svg"></img>
       </div>
     </div>
   );
