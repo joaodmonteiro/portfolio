@@ -11,10 +11,8 @@ const Home: NextPage = () => {
   return (
     <ScrollContainer>
       <div className={styles.container}>
-        {/* <div className={styles.scroll_container}> */}
         <Hero />
         <Homepage_Projects />
-        {/* </div> */}
       </div>
     </ScrollContainer>
   );
