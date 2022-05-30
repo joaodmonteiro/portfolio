@@ -1,73 +1,77 @@
 import styles from "../../styles/Multitrack.module.scss";
-import { useState, useRef, useMemo, useEffect } from "react";
+import { useState, useRef, useMemo, useEffect, Children } from "react";
 import Link from "next/link";
 import ScrollContainer from "../../components/ScrollContainer";
+import Stack from "../../components/Stack";
+import Project_Links from "../../components/Project_Links";
 
 const Multitrack = () => {
-  const [image1Styles, setImage1Styles] = useState(`${styles.screenshot}`);
-  const [image2Styles, setImage2Styles] = useState(`${styles.screenshot}`);
-  const [image3Styles, setImage3Styles] = useState(`${styles.screenshot}`);
+  const stack = [
+    { name: "HTML", img: "/images/icons/html_icon.svg" },
+    { name: "CSS", img: "/images/icons/css_icon.svg" },
+    { name: "React", img: "/images/icons/react_icon.svg" },
+    { name: "Vite", img: "/images/icons/vite_icon.svg" },
+    { name: "Firebase", img: "/images/icons/firebase_icon.svg" },
+    { name: "EmailJS", img: "/images/icons/emailjs_icon.svg" },
+  ];
 
-  const targetRef = useRef(null);
-
-  const options = useMemo(() => {
-    return {
-      root: null,
-      rootMargin: "400px",
-      threshold: 1,
-    };
-  }, []);
-
-  const callbackFunction = (entries) => {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-      animate();
-      console.log("yes");
-    }
+  const links = {
+    website: "https://joaodmonteiro.github.io/multitrack",
+    github: "https://github.com/joaodmonteiro/multitrack",
   };
 
-  const animate = () => {
-    setImage1Styles((prevState) => prevState + " " + styles.image1);
-    setImage2Styles((prevState) => prevState + " " + styles.image2);
-    setImage3Styles((prevState) => prevState + " " + styles.image3);
-  };
+  // const [image1Styles, setImage1Styles] = useState(`${styles.screenshot}`);
+  // const [image2Styles, setImage2Styles] = useState(`${styles.screenshot}`);
+  // const [image3Styles, setImage3Styles] = useState(`${styles.screenshot}`);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction, options);
-    const currentTarget = targetRef.current;
+  // const [animationCounter, setAnimationCounter] = useState(0);
 
-    if (currentTarget) observer.observe(currentTarget);
+  // const targetRef = useRef(null);
+  // const scrollContainerRef = useRef();
 
-    return () => {
-      if (currentTarget) observer.unobserve(currentTarget);
-    };
-  }, [targetRef, options]);
+  // const options = useMemo(() => {
+  //   return {
+  //     root: scrollContainerRef.current,
+  //     rootMargin: "500px",
+  //     threshold: 1,
+  //   };
+  // }, []);
+
+  // const callbackFunction = (entries) => {
+  //   const [entry] = entries;
+  //   if (entry.isIntersecting) {
+  //     animate();
+  //   }
+  // };
+
+  // const animate = () => {
+  //   setImage1Styles(styles.screenshot + " " + styles.image1);
+  //   setImage2Styles(styles.screenshot + " " + styles.image2);
+  //   setImage3Styles(styles.screenshot + " " + styles.image3);
+  // };
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(callbackFunction, options);
+  //   const currentTarget = targetRef.current;
+
+  //   if (currentTarget) observer.observe(currentTarget);
+
+  //   return () => {
+  //     if (currentTarget) observer.unobserve(currentTarget);
+  //   };
+  // }, [targetRef.current, options]);
 
   return (
-    <ScrollContainer>
+    <ScrollContainer props={Children}>
       <div className={styles.container}>
         <div className={styles.scroll_container}>
           <section className={styles.logo_container}>
             <img alt="Multitrack's logo" src="/images/multitrack_logo.svg" />
             <img src="/images/arrow_down.svg" alt="" />
           </section>
-          <section ref={targetRef} className={styles.screenshots}>
-            <div className={styles.screenshots_wrapper}>
-              <img
-                className={image3Styles}
-                src="/images/desktop_screenshot3.png"
-                alt=""
-              />
-              <img
-                className={image2Styles}
-                src="/images/desktop_screenshot2.png"
-                alt=""
-              />
-              <img
-                className={image1Styles}
-                src="/images/desktop_screenshot1.png"
-                alt=""
-              />
+          <section className={styles.mockup1_container}>
+            <div className={styles.mockup1}>
+              <img src="/images/multitrack_mockup.png" alt="" />
             </div>
           </section>
           <section className={styles.information}>
@@ -101,58 +105,9 @@ const Multitrack = () => {
             </div>
           </section>
 
-          <section className={styles.stack}>
-            <h2>Stack</h2>
-            <div className={styles.logos_container}>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/html_icon.svg" alt="" />
-                <span>HTML</span>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/css_icon.svg" alt="" />
-                <span>CSS</span>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/react_icon.svg" alt="" />
-                <span>React</span>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/vite_icon.svg" alt="" />
-                <span>Vite</span>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/firebase_icon.svg" alt="" />
-                <span>Firebase</span>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <img src="/images/icons/emailjs_icon.svg" alt="" />
-                <span>EmailJS</span>
-              </div>
-            </div>
-          </section>
+          <Stack stackItems={stack} />
 
-          <section className={styles.links}>
-            <div className={styles.links_container}>
-              <a
-                href="https://joaodmonteiro.github.io/multitrack/"
-                target="_blank"
-                rel="noreferrer">
-                <div className={styles.website}>
-                  <img src="/images/arrow.svg" alt="arrow" />
-                  <span>Website</span>
-                </div>
-              </a>
-              <a
-                href="https://github.com/joaodmonteiro/multitrack"
-                target="_blank"
-                rel="noreferrer">
-                <div className={styles.github}>
-                  <img src="/images/arrow.svg" alt="arrow" />
-                  <span>Github</span>
-                </div>
-              </a>
-            </div>
-          </section>
+          <Project_Links links={links} />
         </div>
       </div>
     </ScrollContainer>

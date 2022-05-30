@@ -10,7 +10,7 @@ const About: NextPage = () => {
           <div className={styles.picture_container}>
             <img
               alt="photo of Joao Monteiro"
-              src="/images/BW_portfolio_pic 2.JPG"></img>
+              src="/images/BW_portfolio_pic_square.jpg"></img>
           </div>
           <div className={styles.bio}>
             <p>Hi, I’m João, a front end web developer based in London, UK.</p>
@@ -32,9 +32,7 @@ const About: NextPage = () => {
             </p>
           </div>
           <div className={styles.picture_container}>
-            <img
-              alt="photo of Joao Monteiro"
-              src="/images/BW_portfolio_pic1.JPG"></img>
+            <img alt="photo of Joao Monteiro" src="/images/BW_photo2.jpg"></img>
           </div>
         </section>
       </div>

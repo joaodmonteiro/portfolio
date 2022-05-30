@@ -19,12 +19,12 @@
             overflow: hidden;
             
             padding-right: calc(2* $fs-med);
-            max-height: 60%;
-            max-width: 20%;
+            max-width: 30%;
+            aspect-ratio: 3 / 2;
     
             img {
                 object-fit: cover;
-                min-width: 220%;
+                width: 100%;
             }
         }
 

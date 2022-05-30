@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.container {
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .links_container {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        font-size: $fs-vbig;
+        font-family: Neue45Light;
+        text-underline-offset: .2em;
+        padding-bottom: 1em;
+
+        a > div {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: calc($fs-vbig * 0.9);
+            margin-right: .2em;
+        }
+
+        span {
+            border-bottom: .06em solid #0A0903;
+        }
+    }
+}

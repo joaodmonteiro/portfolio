@@ -6,13 +6,14 @@ import Homepage_Projects from "../components/Homepage_projects";
 import Nav from "../components/Nav";
 import styles from "../styles/Home.module.scss";
 import ScrollContainer from "../components/ScrollContainer";
+import Projects_component from "../components/Projects_component";
 
 const Home: NextPage = () => {
   return (
     <ScrollContainer>
       <div className={styles.container}>
         <Hero />
-        <Homepage_Projects />
+        <Projects_component />
       </div>
     </ScrollContainer>
   );

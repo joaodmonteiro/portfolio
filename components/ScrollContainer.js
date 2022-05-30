@@ -13,7 +13,7 @@ const ScrollContainer = (props) => {
   const spacer = useRef(null);
   const container = useRef(null);
   const blocks = useRef([]);
-  const ease = 0.11;
+  const ease = 0.1;
   let yCurrent = 0;
   let yScroll = 0;
   let animationFrame;
@@ -74,7 +74,7 @@ const ScrollContainer = (props) => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("scroll", updateScroll);
     };
-  }, []);
+  }, [props]);
 
   const addBlock = (data) => {
     blocks.current = [...blocks.current, createBlock(data, container.current)];
@@ -82,10 +82,8 @@ const ScrollContainer = (props) => {
 
   return (
     <ScrollContext.Provider value={{ addBlock }}>
-      <>
-        <div ref={spacer} />
-        <div ref={container}>{props.children}</div>
-      </>
+      <div ref={spacer} />
+      <div ref={container}>{props.children}</div>
     </ScrollContext.Provider>
   );
 };
