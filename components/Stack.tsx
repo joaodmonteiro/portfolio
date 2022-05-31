@@ -1,13 +1,24 @@
 import styles from "../styles/Stack.module.scss";
 
-const Stack = ({ stackItems }) => {
+interface Props {
+  stack: Tech[];
+}
+
+interface Tech {
+  name: string;
+  img: string;
+}
+
+const Stack = (props: Props) => {
   return (
     <div className={styles.container}>
       <h2>Stack</h2>
       <div className={styles.logos_container}>
-        {stackItems.map((item) => {
+        {props.stack.map((item) => {
           return (
-            <div className={styles.logo_wrapper}>
+            <div
+              key={props.stack.indexOf(item)}
+              className={styles.logo_wrapper}>
               <img src={item.img} alt="" />
               <span>{item.name}</span>
             </div>

@@ -37,8 +37,8 @@ const RiderRotation = () => {
             team in order to manage the state of all the riders and bikes.
           </div>
         </section>
-        <Stack stackItems={stack}></Stack>
-        <Project_Links links={links}></Project_Links>
+        <Stack stack={stack}></Stack>
+        <Project_Links {...links}></Project_Links>
       </div>
     </ScrollContainer>
   );

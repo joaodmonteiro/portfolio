@@ -1,6 +1,14 @@
+import { NextPage } from "next";
 import styles from "../styles/Project_Links.module.scss";
 
-const Project_Links = ({ links }) => {
+interface Props {
+  website: string;
+  github: string;
+}
+
+const Project_Links = (links: Props) => {
+  // const { website } = props;
+  // const { github } = props;
   return (
     <div className={styles.container}>
       <div className={styles.links_container}>

@@ -105,9 +105,9 @@ const Multitrack = () => {
             </div>
           </section>
 
-          <Stack stackItems={stack} />
+          <Stack stack={stack} />
 
-          <Project_Links links={links} />
+          <Project_Links {...links} />
         </div>
       </div>
     </ScrollContainer>
