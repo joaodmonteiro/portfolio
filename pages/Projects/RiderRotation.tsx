@@ -2,6 +2,8 @@ import styles from "../../styles/RiderRotation.module.scss";
 import ScrollContainer from "../../components/ScrollContainer";
 import Stack from "../../components/Stack";
 import Project_Links from "../../components/Project_Links";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const RiderRotation = () => {
   const stack = [
@@ -16,6 +18,12 @@ const RiderRotation = () => {
     website: "https://joaodmonteiro.github.io/rider-rotation/",
     github: "https://github.com/joaodmonteiro/rider-rotation",
   };
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.events.on("routeChangeComplete", () => console.log("finished"));
+  }, [router.events]);
 
   return (
     <ScrollContainer>

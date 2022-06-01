@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 import {
   setTransform,
   setStyles,
@@ -17,6 +17,7 @@ const ScrollContainer = (props) => {
   let yCurrent = 0;
   let yScroll = 0;
   let animationFrame;
+  const [showChild, setShowChild] = useState(false);
 
   const updateScroll = () => {
     yScroll = window.scrollY || window.pageYOffset;
@@ -66,7 +67,7 @@ const ScrollContainer = (props) => {
     startAnimation();
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     init();
     window.addEventListener("resize", resize);
     window.addEventListener("scroll", updateScroll);
@@ -74,7 +75,7 @@ const ScrollContainer = (props) => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("scroll", updateScroll);
     };
-  }, [props]);
+  });
 
   const addBlock = (data) => {
     blocks.current = [...blocks.current, createBlock(data, container.current)];
