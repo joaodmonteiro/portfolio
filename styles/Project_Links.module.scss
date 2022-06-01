@@ -18,15 +18,17 @@
         a > div {
             display: flex;
             align-items: center;
+
+            img {
+                height: calc($fs-vbig * 0.9);
+                margin-right: .2em;
+            }
+    
+            span {
+                border-bottom: .06em solid #0A0903;
+            }
         }
 
-        img {
-            height: calc($fs-vbig * 0.9);
-            margin-right: .2em;
-        }
-
-        span {
-            border-bottom: .06em solid #0A0903;
-        }
+        
     }
 }

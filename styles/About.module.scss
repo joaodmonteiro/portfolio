@@ -8,8 +8,8 @@
     "background video"
     "interests hobbies"
     "tech tech";
-    margin: $pad-desktop;
     column-gap: 5%;
+    margin: 0 $pad-desktop;
 
     .first_section {
         grid-area: hero;
@@ -22,6 +22,7 @@
         column-gap: 5%;
         height: calc(100vh - $pad-desktop * 2);
         padding-top: calc(3 * $fs-med);
+        margin-top: $pad-desktop;
 
         .hello {
             grid-area: hello;
@@ -183,6 +184,7 @@
             width: 100%;
             overflow-x: scroll;
             padding: 3rem 0;
+            scroll-snap-type: x mandatory;
 
             .logos_container {
                 display: flex;
@@ -193,6 +195,7 @@
                     align-items: center;
                     margin-right: 4rem;
                     min-width: 120px;
+                    scroll-snap-align: start;
 
                     span {
                         margin-top: 1rem;
