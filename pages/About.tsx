@@ -77,9 +77,9 @@ const About: NextPage = () => {
                 height="315"
                 src="https://www.youtube.com/embed/KVTv5WPtxlQ?rel=0&amp;autoplay=1&mute=1&start=55"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
             )}
           </div>
           <div className={styles.video_description}>
