@@ -31,11 +31,12 @@ const About: NextPage = () => {
         <section className={styles.first_section}>
           <div className={styles.hello}>
             <span>
-              Hi,<br></br> I'm João.
+              Hi,<br></br>
+              {`I'm João.`}
             </span>
           </div>
           <div className={styles.intro}>
-            <div>I'm a front end web developer.</div>
+            <div>{`I'm a front end web developer.`}</div>
           </div>
           <div className={styles.more}>
             <div>More about me</div>
