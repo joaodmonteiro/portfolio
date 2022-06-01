@@ -8,32 +8,40 @@ const Projects: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.project_container}>
-        <div className={`${styles.image_container} ${styles.multitrack}`}>
-          <Image
-            src="/images/multitrack_mockup.png"
-            alt=""
-            width={1000}
-            height={1000}
-            objectFit={"scale-down"}
-          />
-        </div>
         <Link href="/Projects/Multitrack">
-          <a>Multitrack - Charity Website</a>
+          <a>
+            {" "}
+            <div className={`${styles.image_container} ${styles.multitrack}`}>
+              <Image
+                src="/images/multitrack_mockup.png"
+                alt=""
+                width={1000}
+                height={1000}
+                objectFit={"scale-down"}
+              />
+            </div>
+          </a>
         </Link>
+        <div className={styles.project_name}>Multitrack - Charity Website</div>
       </div>
       <div className={styles.project_container}>
-        <div className={`${styles.image_container} ${styles.riderrotation}`}>
-          <Image
-            src="/images/riderrotation_mockup.png"
-            alt=""
-            width={1000}
-            height={1000}
-            objectFit={"scale-down"}
-          />
-        </div>
         <Link href="/Projects/RiderRotation">
-          <a>Rider Rodation - Dashboard Application</a>
+          <a>
+            <div
+              className={`${styles.image_container} ${styles.riderrotation}`}>
+              <Image
+                src="/images/riderrotation_mockup.png"
+                alt=""
+                width={1000}
+                height={1000}
+                objectFit={"scale-down"}
+              />
+            </div>
+          </a>
         </Link>
+        <div className={styles.project_name}>
+          Rider Rodation - Dashboard Application
+        </div>
       </div>
     </div>
   );

@@ -29,17 +29,12 @@
             
         }
 
-        a {
+        .project_name {
+            margin-top: 1rem;
             font-family: Neue45Light;
             font-size: $fs-med;
             letter-spacing: calc($fs-med * $ls-normal);
-            margin-top: 1em;
             font-weight: 100;
-
-            &:hover {
-                text-decoration: underline;
-                text-underline-offset: .3em;
-            }
         }
     
         

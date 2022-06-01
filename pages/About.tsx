@@ -28,25 +28,29 @@ const About: NextPage = () => {
   return (
     <ScrollContainer>
       <div className={styles.container}>
-        <div className={styles.hello}>
-          <span>
-            Hello,<br></br> I'm João.
-          </span>
-        </div>
-        <div className={styles.intro}>
-          <div>I'm a front end web developer.</div>
-        </div>
-        <div className={styles.location}>
-          <span>Based in London, UK</span>
-        </div>
-        <div className={styles.picture_container}>
-          <Image
-            src="/images/BW_photo2.jpg"
-            width={1000}
-            height={670}
-            alt="Photo of João Monteiro"
-            objectFit={"scale-down"}></Image>
-        </div>
+        <section className={styles.first_section}>
+          <div className={styles.hello}>
+            <span>
+              Hi,<br></br> I'm João.
+            </span>
+          </div>
+          <div className={styles.intro}>
+            <div>I'm a front end web developer.</div>
+          </div>
+          <div className={styles.more}>
+            <div>More about me</div>
+            <img src="images/arrow_down.svg"></img>
+          </div>
+          <div className={styles.picture_container}>
+            <Image
+              src="/images/BW_photo2.jpg"
+              width={1000}
+              height={670}
+              alt="Photo of João Monteiro"
+              objectFit={"scale-down"}></Image>
+          </div>
+        </section>
+
         <div className={styles.background}>
           <div>
             I’m originally from Portugal and my background includes game
@@ -122,7 +126,7 @@ const About: NextPage = () => {
             </p>
             <p>
               In order to create responsive, scalable and fast applications you
-              have to keep track of the latest tools to do so. Therefore my
+              have to keep track of the latest tools to do so. Therefore, my
               skillset keeps growing every day.
             </p>
           </div>
