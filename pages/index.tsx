@@ -10,12 +10,10 @@ import Projects_component from "../components/Projects_component";
 
 const Home: NextPage = () => {
   return (
-    <ScrollContainer>
-      <div className={styles.container}>
-        <Hero />
-        <Projects_component />
-      </div>
-    </ScrollContainer>
+    <div className={styles.container}>
+      <Hero />
+      <Projects_component />
+    </div>
   );
 };
 

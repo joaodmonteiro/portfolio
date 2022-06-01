@@ -26,29 +26,27 @@ const RiderRotation = () => {
   }, [router.events]);
 
   return (
-    <ScrollContainer>
-      <div className={styles.container}>
-        <section className={styles.title_container}>
-          <h1>Rider Rotation</h1>
-        </section>
-        <section className={styles.mockup1_container}>
-          <img src="/images/riderrotation_mockup.png" alt="" />
-          <div>
-            Rider Rotation is a dashboard web application that I made for
-            Gorillas, a grocery delivery company.
-          </div>
-        </section>
-        <section className={styles.mockup2_container}>
-          <img src="/images/riderrotation_mockup2.png" alt="" />
-          <div>
-            This web app was created to be a tool used by the Gorillas warehouse
-            team in order to manage the state of all the riders and bikes.
-          </div>
-        </section>
-        <Stack stack={stack}></Stack>
-        <Project_Links {...links}></Project_Links>
-      </div>
-    </ScrollContainer>
+    <div className={styles.container}>
+      <section className={styles.title_container}>
+        <h1>Rider Rotation</h1>
+      </section>
+      <section className={styles.mockup1_container}>
+        <img src="/images/riderrotation_mockup.png" alt="" />
+        <div>
+          Rider Rotation is a dashboard web application that I made for
+          Gorillas, a grocery delivery company.
+        </div>
+      </section>
+      <section className={styles.mockup2_container}>
+        <img src="/images/riderrotation_mockup2.png" alt="" />
+        <div>
+          This web app was created to be a tool used by the Gorillas warehouse
+          team in order to manage the state of all the riders and bikes.
+        </div>
+      </section>
+      <Stack stack={stack}></Stack>
+      <Project_Links {...links}></Project_Links>
+    </div>
   );
 };
 
