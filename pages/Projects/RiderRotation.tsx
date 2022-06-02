@@ -4,6 +4,7 @@ import Stack from "../../components/Stack";
 import Project_Links from "../../components/Project_Links";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Image from "next/image";
 
 const RiderRotation = () => {
   const stack = [
@@ -31,15 +32,31 @@ const RiderRotation = () => {
         <h1>Rider Rotation</h1>
       </section>
       <section className={styles.mockup1_container}>
-        <img src="/images/riderrotation_mockup.png" alt="" />
-        <div>
+        <div className={styles.image}>
+          <Image
+            src="/images/riderrotation_mockup.png"
+            alt=""
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"></Image>
+        </div>
+        <div className={styles.description}>
           Rider Rotation is a dashboard web application that I made for
           Gorillas, a grocery delivery company.
         </div>
       </section>
       <section className={styles.mockup2_container}>
-        <img src="/images/riderrotation_mockup2.png" alt="" />
-        <div>
+        <div className={styles.image}>
+          <Image
+            src="/images/riderrotation_mockup2.png"
+            alt=""
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"></Image>
+        </div>
+        <div className={styles.description}>
           This web app was created to be a tool used by the Gorillas warehouse
           team in order to manage the state of all the riders and bikes.
         </div>

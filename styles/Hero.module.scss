@@ -14,12 +14,9 @@
 
     .picture_container {
         grid-area: picture;
-        display: flex;
-        align-items: flex-start;
         overflow: hidden;
-        // margin-right: calc(2* $fs-med);
         margin-bottom: calc(2* $fs-med);
-        max-height: 100%;
+        width: 100%;
 
         img {
             object-fit: cover;

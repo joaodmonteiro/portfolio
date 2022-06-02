@@ -15,9 +15,10 @@ const Projects: NextPage = () => {
               <Image
                 src="/images/multitrack_mockup.png"
                 alt=""
-                width={1000}
-                height={1000}
-                objectFit={"scale-down"}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
               />
             </div>
           </a>
@@ -32,9 +33,10 @@ const Projects: NextPage = () => {
               <Image
                 src="/images/riderrotation_mockup.png"
                 alt=""
-                width={1000}
-                height={1000}
-                objectFit={"scale-down"}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
               />
             </div>
           </a>

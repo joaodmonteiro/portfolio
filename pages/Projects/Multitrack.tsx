@@ -4,6 +4,7 @@ import Link from "next/link";
 import ScrollContainer from "../../components/ScrollContainer";
 import Stack from "../../components/Stack";
 import Project_Links from "../../components/Project_Links";
+import Image from "next/image";
 
 const Multitrack = () => {
   const stack = [
@@ -29,7 +30,13 @@ const Multitrack = () => {
         </section>
         <section className={styles.mockup1_container}>
           <div className={styles.mockup1}>
-            <img src="/images/multitrack_mockup.png" alt="" />
+            <Image
+              src="/images/multitrack_mockup.png"
+              alt=""
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"></Image>
           </div>
         </section>
         <section className={styles.information}>
@@ -58,7 +65,13 @@ const Multitrack = () => {
           </div>
           <div className={styles.mockup_container}>
             <div className={styles.android_mockup}>
-              <img src="/images/android_mockup.png" alt="" />
+              <Image
+                src="/images/android_mockup.png"
+                alt=""
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"></Image>
             </div>
           </div>
         </section>

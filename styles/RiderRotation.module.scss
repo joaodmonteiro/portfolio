@@ -1,10 +1,13 @@
 @import './variables.scss';
 
 .container {
+    margin: 0 $pad-desktop;
+
     .title_container {
         display: grid;
         place-items: center;
-        height: 80vh;
+        height: 60vh;
+        padding-top: calc(3 * $fs-med);
 
         h1 {
             font-family: Neue55Roman;
@@ -19,17 +22,16 @@
         align-items: center;
         justify-content: center;
 
-        img {
-            max-height: 80vh;
-            max-width: 90vw;
+        .image {
+            width: 80%;
+            height: max-content;
         }
 
-        div {
-            font-size: $fs-med;
+        .description {
+            font-size: $fs-big;
             font-family: Neue45Light;
-            letter-spacing: calc($fs-med * $ls-normal);
+            letter-spacing: calc($fs-big * $ls-normal);
             max-width: 38ch;
-            margin-top: 6em;
             text-align: center;
         }
     }
@@ -40,11 +42,17 @@
         place-items: center;
         height: 100vh;
 
-        div {
-            font-size: $fs-med;
+        .image {
+            width: 100%;
+            height: max-content;
+        }
+
+        .description {
+            font-size: $fs-big;
             font-family: Neue45Light;
-            letter-spacing: calc($fs-med * $ls-normal);
+            letter-spacing: calc($fs-big * $ls-normal);
             max-width: 38ch;
+            margin-left: 2em;
         }
     }
 }

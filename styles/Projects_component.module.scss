@@ -14,19 +14,18 @@
 
         .image_container {
             background-color: #D9D9D9;
-            height: calc(100vh - ($fs-med * 6));
-            margin-top: calc($fs-med * 2);
-            display: grid;
-            place-items: center;
+            height: calc(100vh - ($fs-med * 10));
+            margin-top: calc($fs-med * 4);
             overflow: hidden;
             padding: 2em;
+            width: 100%;
+            height: max-content;
         }
 
         .multitrack {
             * {
                 transform: translateX(3%);
             }
-            
         }
 
         .project_name {

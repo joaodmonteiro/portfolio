@@ -44,10 +44,11 @@ const About: NextPage = () => {
         <div className={styles.picture_container}>
           <Image
             src="/images/BW_photo2.jpg"
-            width={1000}
-            height={670}
+            width="100%"
+            height="70%"
             alt="Photo of João Monteiro"
-            objectFit={"scale-down"}></Image>
+            layout="responsive"
+            objectFit="contain"></Image>
         </div>
       </section>
 
@@ -61,7 +62,14 @@ const About: NextPage = () => {
         <div className={styles.video}>
           {!video && (
             <div className={styles.play_container}>
-              <Image src="/images/game2.png" width={1000} height={315}></Image>
+              <div className={styles.image}>
+                <Image
+                  src="/images/game2.png"
+                  width="100%"
+                  height="50%"
+                  layout="responsive"
+                  objectFit="contain"></Image>
+              </div>
               <div className={styles.playBtn} onClick={handlePlay}>
                 <img src="/images/icons/play_icon.png" alt="" />
               </div>
@@ -103,11 +111,16 @@ const About: NextPage = () => {
             {tech.map((item) => {
               return (
                 <div key={tech.indexOf(item)} className={styles.logo_wrapper}>
-                  <Image
-                    src={item.img}
-                    alt={`logo of ${item.name}`}
-                    width={100}
-                    height={100}></Image>
+                  <div className={styles.logo}>
+                    <Image
+                      src={item.img}
+                      alt={`logo of ${item.name}`}
+                      width="100%"
+                      height="100%"
+                      layout="responsive"
+                      objectFit="contain"></Image>
+                  </div>
+
                   <span>{item.name}</span>
                 </div>
               );

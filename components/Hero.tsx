@@ -7,8 +7,10 @@ const Hero = () => {
       <div className={styles.picture_container}>
         <Image
           src="/images/BW_portfolio_pic_square.jpg"
-          width={1000}
-          height={1000}
+          width="100%"
+          height="100%"
+          layout="responsive"
+          objectFit="contain"
           alt="Photo of João Monteiro"></Image>
       </div>
       <div className={styles.bio_name}>João Monteiro</div>
