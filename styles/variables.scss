@@ -28,3 +28,12 @@ $pad-desktop: 2vw;
 $pad-2: 2em;
 
 $ls-normal: 0.045; 
+
+$doc-height: 100%;
+
+:export {
+    docHeight: $doc-height;
+}
+
+
+

@@ -1,11 +1,11 @@
 @import './variables.scss';
 
 .container {
-    padding: $pad-desktop;
+    padding: calc($fs-med * 4) $pad-desktop $pad-desktop $pad-desktop;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $pad-desktop;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(255, 255, 255);
 
     .project_container {
@@ -15,7 +15,6 @@
         .image_container {
             background-color: #D9D9D9;
             height: calc(100vh - ($fs-med * 10));
-            margin-top: calc($fs-med * 4);
             overflow: hidden;
             padding: 2em;
             width: 100%;
@@ -35,7 +34,17 @@
             letter-spacing: calc($fs-med * $ls-normal);
             font-weight: 100;
         }
-    
-        
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+
+        .project_container {
+            margin-bottom: $fs-med;
+            .image_container {
+            }
+        }
     }
 }

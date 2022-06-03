@@ -9,7 +9,7 @@
     "name cta";
     margin: $pad-desktop;
     padding-top: calc(3 * $fs-med);
-    height: calc(100vh - $pad-desktop * 2);
+    height: calc(100vh - ($pad-desktop * 2));
     column-gap: 5%;
 
     .picture_container {
@@ -26,8 +26,6 @@
     }
 
     .bio_name {
-        // position: sticky;
-        // top: 0;
         grid-area: name;
         font-family: Neue55Roman;
         font-size: $fs-huge;
@@ -70,6 +68,7 @@
         "info info"
         "picture picture"
         "name cta";
+        padding-bottom: 10vh;
 
         .bio_info {
             margin-bottom: 1em;

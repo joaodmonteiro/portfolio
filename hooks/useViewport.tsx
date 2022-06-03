@@ -8,9 +8,13 @@ const useViewport = () => {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
 
+    const doc = document.documentElement;
+    doc.style.setProperty("$doc-height", `${height}px`);
+
     const handleResize = () => {
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
+      doc.style.setProperty("$doc-height", `${height}px`);
     };
 
     window.addEventListener("resize", handleResize);
