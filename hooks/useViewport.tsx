@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const useViewport = () => {
-  const [width, setWidth] = useState();
-  const [height, setHeight] = useState();
+  const [width, setWidth] = useState<number>();
+  const [height, setHeight] = useState<number>();
 
   useEffect(() => {
     setWidth(window.innerWidth);
