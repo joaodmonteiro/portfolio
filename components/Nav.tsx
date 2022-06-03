@@ -7,12 +7,12 @@ import useViewport from "../hooks/useViewport";
 const Nav = () => {
   const [mobileLayout, setMobileLayout] = useState(false);
   const router = useRouter();
-  const { width } = useViewport();
+  const { width, height } = useViewport();
 
   return (
     <nav className={styles.container}>
       <div className={styles.screen}></div>
-      {width > 600 && (
+      {width && width > 600 && (
         <ul className={styles.nav_list}>
           <li>
             <Link href="/">JOÃO MONTEIRO</Link>
@@ -32,7 +32,7 @@ const Nav = () => {
           </li>
         </ul>
       )}
-      {width <= 600 && (
+      {width && width <= 600 && (
         <ul className={styles.nav_list}>
           <li>
             <Link href="/">JOÃO MONTEIRO</Link>
