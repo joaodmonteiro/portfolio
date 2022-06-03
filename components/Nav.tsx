@@ -3,15 +3,18 @@ import styles from "../styles/Nav.module.scss";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import useViewport from "../hooks/useViewport";
+import Menu from "./Menu";
 
-const Nav = () => {
-  const [mobileLayout, setMobileLayout] = useState(false);
+interface Props {
+  handleMenuClick: () => void;
+}
+
+const Nav = ({ handleMenuClick }: Props) => {
   const router = useRouter();
   const { width, height } = useViewport();
 
   return (
     <nav className={styles.container}>
-      <div className={styles.screen}></div>
       {width && width > 600 && (
         <ul className={styles.nav_list}>
           <li>
@@ -38,8 +41,9 @@ const Nav = () => {
             <Link href="/">JOÃO MONTEIRO</Link>
           </li>
           <li>
-            <div className={styles.menu}>
-              <img src="/images/icons/burger_icon.svg" alt="" />
+            <div className={styles.menu} onClick={handleMenuClick}>
+              {/* <img src="/images/icons/burger_icon.svg" alt="" /> */}
+              MENU
             </div>
           </li>
         </ul>

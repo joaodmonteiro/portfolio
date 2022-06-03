@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    padding: $pad-desktop;
+    transform: translateX(100vw);
+    transition: transform .4s ease-in-out;
+
+    .close_menu {
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav_list {
+        font-family: Neue45Light;
+        font-size: $fs-huge;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        li {
+            margin-top: .4em;
+        }
+    }
+}
+
+.load_animation {
+    transform: translateX(0);
+}
+
+

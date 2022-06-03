@@ -42,7 +42,7 @@ const Projects: NextPage = () => {
           </a>
         </Link>
         <div className={styles.project_name}>
-          Rider Rodation - Dashboard Application
+          Rider Rotation - Dashboard Application
         </div>
       </div>
     </div>
