@@ -63,3 +63,36 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas: 
+        "info info"
+        "picture picture"
+        "name cta";
+
+        .bio_info {
+            margin-bottom: 1em;
+            height: fit-content;
+        }
+
+        .picture_container {
+            max-width: calc(100vw - (2 * $pad-desktop));
+            max-height: 100%;
+            overflow: hidden;
+
+            &:first-child {
+                width: 200%;
+            }
+
+            img {
+                object-fit: cover !important;
+                width: 200% !important;
+            }
+        }
+
+        .cta {
+            justify-self: flex-end;
+        }
+    }
+}
