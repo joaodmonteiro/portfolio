@@ -247,3 +247,63 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hero"
+        "background"
+        "video"
+        "interests"
+        "hobbies"
+        "tech";
+
+        * {
+            max-width: calc(100vw - (2* $pad-desktop));
+        }
+
+        .first_section {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hello"
+            "pic"
+            "intro"
+            "more";
+            margin-bottom: $fs-huge;
+
+            .picture_container {
+                margin-bottom: $fs-huge;
+            }
+
+            .intro {
+                div {
+                    max-width: max-content;
+                }
+                margin-bottom: $fs-huge;
+            }
+        }
+
+        .interests {
+            div {
+                max-width: max-content;
+            }
+        }
+
+        .hobbies {
+            div {
+                max-width: max-content;
+            }
+        }
+
+        .tech {
+            .tech_carousel {
+                margin-top: .6em;
+            }
+
+            .tech_description {
+                margin-top: $fs-huge;
+            }
+        }
+    }
+}
