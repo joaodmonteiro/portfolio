@@ -1,15 +1,17 @@
 @import './variables.scss';
 
 .container {
-    height: 40vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-top: calc(2*$fs-huge);
+    margin-bottom: calc(2*$fs-huge);
 
     .links_container {
         display: flex;
-        width: 50%;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: center;
+        gap: $fs-huge;
         font-size: $fs-vbig;
         font-family: Neue45Light;
         text-underline-offset: .2em;

@@ -37,7 +37,7 @@
 
         .mockup1 {
             width: 100%;
-            height: 100%;
+            // height: 100%;
             overflow: hidden;
 
             img {
@@ -97,6 +97,35 @@
     }
 }
     
+}
+
+@media (max-width: 600px) {
+    .container {
+        .scroll_container {
+            .mockup1_container {
+                height: 100vh;
+            }
+    
+            .information {
+                display: block;
+                padding: calc(2 * $fs-huge) $pad-desktop;
+                height: auto;
+
+                .description {
+                    margin-bottom: calc(2*$fs-huge);
+                    p {
+                        max-width: max-content;
+                    }
+                }
+
+                .mockup_container {
+                    .android_mockup {
+                        transform: translateX(-15%);
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes appear {
