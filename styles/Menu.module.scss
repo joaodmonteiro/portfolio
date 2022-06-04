@@ -16,6 +16,7 @@
     .close_menu {
         display: flex;
         justify-content: end;
+        height: $fs-med;
     }
 
     .nav_list {
@@ -33,6 +34,7 @@
 
 .load_animation {
     transform: translateX(0);
+    
 }
 
 
