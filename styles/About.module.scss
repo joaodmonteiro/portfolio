@@ -10,6 +10,7 @@
     "tech tech";
     column-gap: 5%;
     margin: 0 $pad-desktop;
+    padding-bottom: $fs-huge;
 
     .first_section {
         grid-area: hero;
@@ -71,7 +72,8 @@
             }
             img {
                 height: $fs-big;
-                margin-left: .2em;
+                margin-left: .4em;
+                padding-bottom: .45em;
             }
         }
     }
@@ -176,7 +178,7 @@
     }
 
     .tech {
-        margin-top: $fs-huge;
+        margin-top: calc(2*$fs-huge);
         grid-area: tech;
 
         h1 {
@@ -232,10 +234,15 @@
                 // border: 2px solid #D9D9D9; /* should match background, can't be transparent */
                 background-color: rgb(0, 0, 0);
             }
+
+            &::-webkit-scrollbar-track {
+                background-color: #D9D9D9;
+            }
+
         }
 
         .tech_description {
-            margin-top: 8rem;
+            margin-top: $fs-huge;
             font-family: Neue45Light;
             font-size: $fs-big;
             letter-spacing: calc($fs-big * $ls-normal);
