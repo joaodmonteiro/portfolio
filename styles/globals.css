@@ -7,7 +7,6 @@ body {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
