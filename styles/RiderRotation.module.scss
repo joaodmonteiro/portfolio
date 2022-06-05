@@ -56,3 +56,21 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        .title_container {
+            height: 85vh;
+        }
+
+        .mockup2_container {
+            grid-template-columns: 1fr;
+            height: auto;
+            margin-bottom: calc(2*$fs-huge);
+
+            .description {
+                margin-left: 0;
+            }
+        }
+    }
+}
