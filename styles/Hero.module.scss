@@ -9,14 +9,15 @@
     "name cta";
     margin: $pad-desktop;
     padding-top: calc(3 * $fs-med);
-    height: calc(100vh - ($pad-desktop * 2));
     column-gap: 5%;
+    min-height: calc(100vh - ($pad-desktop * 2));
 
     .picture_container {
         grid-area: picture;
         overflow: hidden;
         margin-bottom: calc(2* $fs-med);
         width: 100%;
+        max-height: calc(4*$fs-huge);
 
         img {
             object-fit: cover;
@@ -71,6 +72,7 @@
         "picture picture"
         "name cta";
         padding-bottom: 10vh;
+        height: calc(100vh - ($pad-desktop * 2));
 
         .bio_info {
             margin-bottom: 1em;
