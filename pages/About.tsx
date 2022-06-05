@@ -3,6 +3,9 @@ import { useState } from "react";
 import styles from "../styles/About.module.scss";
 import ScrollContainer from "../components/ScrollContainer";
 import Image from "next/image";
+import photo from "../public/images/BW_photo2.jpg";
+import gameScreenshot from "../public/images/game2.png";
+import playIcon from "../public/images/icons/play_icon.png";
 
 const About: NextPage = () => {
   const tech = [
@@ -39,11 +42,11 @@ const About: NextPage = () => {
         </div>
         <div className={styles.more}>
           <div>More about me</div>
-          <img src="images/arrow_down.svg"></img>
+          <img src="images/arrow_down.svg" alt="arrow pointing down."></img>
         </div>
         <div className={styles.picture_container}>
           <Image
-            src="/images/BW_photo2.jpg"
+            src={photo}
             width="100%"
             height="70%"
             alt="Photo of João Monteiro"
@@ -64,14 +67,23 @@ const About: NextPage = () => {
             <div className={styles.play_container}>
               <div className={styles.image}>
                 <Image
-                  src="/images/game2.png"
+                  src={gameScreenshot}
                   width="100%"
                   height="50%"
                   layout="responsive"
-                  objectFit="contain"></Image>
+                  objectFit="contain"
+                  alt="Screenshot of the videogame Shortcut"></Image>
               </div>
               <div className={styles.playBtn} onClick={handlePlay}>
-                <img src="/images/icons/play_icon.png" alt="" />
+                <div className={styles.image}>
+                  <Image
+                    src={playIcon}
+                    alt="play icon"
+                    width="100%"
+                    height="100%"
+                    layout="responsive"
+                    objectFit="contain"></Image>
+                </div>
               </div>
             </div>
           )}

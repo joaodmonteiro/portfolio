@@ -5,6 +5,8 @@ import Project_Links from "../../components/Project_Links";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Image from "next/image";
+import mockup1 from "../../public/images/riderrotation_mockup.png";
+import mockup2 from "../../public/images/riderrotation_mockup2.png";
 
 const RiderRotation = () => {
   const stack = [
@@ -20,12 +22,6 @@ const RiderRotation = () => {
     github: "https://github.com/joaodmonteiro/rider-rotation",
   };
 
-  const router = useRouter();
-
-  useEffect(() => {
-    router.events.on("routeChangeComplete", () => console.log("finished"));
-  }, [router.events]);
-
   return (
     <div className={styles.container}>
       <section className={styles.title_container}>
@@ -34,8 +30,8 @@ const RiderRotation = () => {
       <section className={styles.mockup1_container}>
         <div className={styles.image}>
           <Image
-            src="/images/riderrotation_mockup.png"
-            alt=""
+            src={mockup1}
+            alt="Rider rotation website seen on a laptop."
             width="100%"
             height="100%"
             layout="responsive"
@@ -49,8 +45,8 @@ const RiderRotation = () => {
       <section className={styles.mockup2_container}>
         <div className={styles.image}>
           <Image
-            src="/images/riderrotation_mockup2.png"
-            alt=""
+            src={mockup2}
+            alt="Login screen for rider rotation website seen on a laptop."
             width="100%"
             height="100%"
             layout="responsive"

@@ -1,6 +1,7 @@
 import styles from "../styles/Menu.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import xIcon from "../public/images/icons/x_icon.svg";
 
 interface Props {
   closeMenu: () => void;
@@ -22,7 +23,7 @@ const Menu = ({ closeMenu }: Props) => {
   return (
     <div className={containerStyles}>
       <div className={styles.close_menu} onClick={handleCloseMenu}>
-        <img src="/images/icons/x_icon.svg" alt="" />
+        <img src={xIcon} alt="x" />
       </div>
       <ul className={styles.nav_list}>
         <li onClick={handleCloseMenu}>

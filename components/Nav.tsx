@@ -42,7 +42,6 @@ const Nav = ({ handleMenuClick }: Props) => {
           </li>
           <li>
             <div className={styles.menu} onClick={handleMenuClick}>
-              {/* <img src="/images/icons/burger_icon.svg" alt="" /> */}
               MENU
             </div>
           </li>

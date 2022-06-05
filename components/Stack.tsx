@@ -19,7 +19,7 @@ const Stack = (props: Props) => {
             <div
               key={props.stack.indexOf(item)}
               className={styles.logo_wrapper}>
-              <img src={item.img} alt="" />
+              <img src={item.img} alt={`${item.name} logo`} />
               <span>{item.name}</span>
             </div>
           );

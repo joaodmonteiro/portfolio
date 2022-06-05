@@ -12,7 +12,7 @@ const Contact: NextPage = () => {
             target="_blank"
             rel="noreferrer">
             <div className={styles.link}>
-              <img src="/images/arrow.svg" alt="" />
+              <img src="/images/arrow.svg" alt="arrow" />
               <div>Email</div>
             </div>
           </a>
@@ -25,7 +25,7 @@ const Contact: NextPage = () => {
             target="_blank"
             rel="noreferrer">
             <div className={styles.link}>
-              <img src="/images/arrow.svg" alt="" />
+              <img src="/images/arrow.svg" alt="arrow" />
               <div>Twitter</div>
             </div>
           </a>
@@ -38,7 +38,7 @@ const Contact: NextPage = () => {
             target="_blank"
             rel="noreferrer">
             <div className={styles.link}>
-              <img src="/images/arrow.svg" alt="" />
+              <img src="/images/arrow.svg" alt="arrow" />
               <div>LinkedIn</div>
             </div>
           </a>

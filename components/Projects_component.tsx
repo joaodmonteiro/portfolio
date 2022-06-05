@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "../styles/Projects_component.module.scss";
 import ScrollContainer from "./ScrollContainer";
 import Image from "next/image";
+import multitrackMockup from "../public/images/multitrack_mockup.png";
+import riderRotationMockup from "../public/images/riderrotation_mockup.png";
 
 const Projects: NextPage = () => {
   return (
@@ -13,8 +15,8 @@ const Projects: NextPage = () => {
             {" "}
             <div className={`${styles.image_container} ${styles.multitrack}`}>
               <Image
-                src="/images/multitrack_mockup.png"
-                alt=""
+                src={multitrackMockup}
+                alt="Multitrack website seen on a laptop and a smartphone."
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -31,8 +33,8 @@ const Projects: NextPage = () => {
             <div
               className={`${styles.image_container} ${styles.riderrotation}`}>
               <Image
-                src="/images/riderrotation_mockup.png"
-                alt=""
+                src={riderRotationMockup}
+                alt="Rider rotation website seen on a laptop."
                 width="100%"
                 height="100%"
                 layout="responsive"

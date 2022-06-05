@@ -1,12 +1,13 @@
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
+import heroPic from "../public/images/BW_portfolio_pic_square.jpg";
 
 const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.picture_container}>
         <Image
-          src="/images/BW_portfolio_pic_square.jpg"
+          src={heroPic}
           width="100%"
           height="100%"
           layout="responsive"
@@ -17,7 +18,7 @@ const Hero = () => {
       <div className={styles.bio_info}>Web Developer, Based in London</div>
       <div className={styles.cta}>
         <div>View projects</div>
-        <img src="images/arrow_down.svg"></img>
+        <img src="images/arrow_down.svg" alt="arrow pointing down"></img>
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import ScrollContainer from "../../components/ScrollContainer";
 import Stack from "../../components/Stack";
 import Project_Links from "../../components/Project_Links";
 import Image from "next/image";
+import mockup from "../../public/images/multitrack_mockup.png";
+import androidMockup from "../../public/images/android_mockup.png";
 
 const Multitrack = () => {
   const stack = [
@@ -26,13 +28,13 @@ const Multitrack = () => {
       <div className={styles.scroll_container}>
         <section className={styles.logo_container}>
           <img alt="Multitrack's logo" src="/images/multitrack_logo.svg" />
-          <img src="/images/arrow_down.svg" alt="" />
+          <img src="/images/arrow_down.svg" alt="arrow pointing down" />
         </section>
         <section className={styles.mockup1_container}>
           <div className={styles.mockup1}>
             <Image
-              src="/images/multitrack_mockup.png"
-              alt=""
+              src={mockup}
+              alt="Multitrack website seen on a laptop and smartphone."
               width="100%"
               height="100%"
               layout="responsive"
@@ -57,7 +59,7 @@ const Multitrack = () => {
                 target="_blank"
                 rel="noreferrer">
                 <span>
-                  <img src="/images/arrow.svg" />
+                  <img src="/images/arrow.svg" alt="arrow" />
                   Catarina Coelho
                 </span>
               </a>
@@ -66,8 +68,8 @@ const Multitrack = () => {
           <div className={styles.mockup_container}>
             <div className={styles.android_mockup}>
               <Image
-                src="/images/android_mockup.png"
-                alt=""
+                src={androidMockup}
+                alt="Multitrack website seen on 3 smartphones."
                 width="100%"
                 height="100%"
                 layout="responsive"
