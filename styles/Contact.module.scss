@@ -50,3 +50,36 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+
+        h1 {
+            margin-top: 1.6em;
+        }
+
+        .links_container {
+            gap: $fs-huge;
+            justify-content: flex-start;
+            margin-top: $fs-huge;
+            .link_item {
+                grid-template-columns: 1fr;
+                gap: 1em;
+                a {
+                    .link {
+                        font-size: $fs-vbig;
+                        letter-spacing: calc($fs-vbig * $ls-normal);
+                        img {
+                            height: calc($fs-vbig * 0.8);
+                        }
+                    }
+                }
+
+                .at {
+                    font-size: $fs-big;
+                    letter-spacing: calc($fs-big * $ls-normal);
+                }
+            }
+        }
+    }
+}

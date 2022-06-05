@@ -13,7 +13,7 @@ const Contact: NextPage = () => {
               <div>Email</div>
             </div>
           </a>
-          <div>hello@joaodmonteiro.com</div>
+          <div className={styles.at}>hello@joaodmonteiro.com</div>
         </div>
 
         <div className={styles.link_item}>
@@ -26,7 +26,7 @@ const Contact: NextPage = () => {
               <div>Twitter</div>
             </div>
           </a>
-          <div>@joaodmonteiro</div>
+          <div className={styles.at}>@joaodmonteiro</div>
         </div>
 
         <div className={styles.link_item}>
@@ -39,7 +39,7 @@ const Contact: NextPage = () => {
               <div>LinkedIn</div>
             </div>
           </a>
-          <div>@joaodmonteiro</div>
+          <div className={styles.at}>@joaodmonteiro</div>
         </div>
       </div>
     </div>
