@@ -5,7 +5,6 @@
     align-items: flex-end;
     justify-content: center;
     margin-top: calc(2*$fs-huge);
-    margin-bottom: calc(2*$fs-huge);
 
     .links_container {
         display: flex;
@@ -15,7 +14,7 @@
         font-size: $fs-vbig;
         font-family: Neue45Light;
         text-underline-offset: .2em;
-        padding-bottom: 1em;
+        padding-bottom: $fs-huge;
 
         a > div {
             display: flex;
