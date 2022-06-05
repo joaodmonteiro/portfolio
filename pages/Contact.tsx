@@ -7,7 +7,10 @@ const Contact: NextPage = () => {
       <h1>Get in touch!</h1>
       <div className={styles.links_container}>
         <div className={styles.link_item}>
-          <a href="" target="_blank" rel="noreferrer">
+          <a
+            href="mailto:joaodmonteiro10@gmail.com"
+            target="_blank"
+            rel="noreferrer">
             <div className={styles.link}>
               <img src="/images/arrow.svg" alt="" />
               <div>Email</div>
