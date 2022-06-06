@@ -8,7 +8,7 @@ const Contact: NextPage = () => {
       <div className={styles.links_container}>
         <div className={styles.link_item}>
           <a
-            href="mailto:joaodmonteiro10@gmail.com"
+            href="mailto:hello@joaodmonteiro.com"
             target="_blank"
             rel="noreferrer">
             <div className={styles.link}>
