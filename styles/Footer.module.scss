@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em $pad-desktop;
+    border-top: 1px solid black;
+    margin-top: $fs-huge;
+
+    .trademark {
+        font-size: $fs-vsmall;
+        letter-spacing: calc($ls-normal * $fs-vsmall);
+        font-family: Neue45Light;
+    }
+
+    .contact {
+        span {
+            font-size: $fs-small;
+            letter-spacing: calc($ls-normal * $fs-small);
+            font-family: Neue45Light;
+            border-bottom: 1px solid #0A0903;
+        }
+
+        img {
+            height: calc($fs-small*.8);
+            margin-right: .2em;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,6 +66,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div>
         <Nav handleMenuClick={handleMenuClick} />
         <Component {...pageProps} />
+        <Footer />
         {menuOpen && <Menu closeMenu={closeMenu} />}
       </div>
     </>
