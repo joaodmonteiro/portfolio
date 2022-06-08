@@ -49,6 +49,7 @@
 
 @media (max-width: 600px) {
     .container {
+        margin-bottom: calc(4*$fs-huge);
         h2 {
             margin-bottom: 0;
         }

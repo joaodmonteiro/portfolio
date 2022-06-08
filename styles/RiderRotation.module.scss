@@ -63,16 +63,22 @@
 @media (max-width: 600px) {
     .container {
         .title_container {
-            height: 85vh;
+            height: 78vh;
         }
 
         .mockup2_container {
             grid-template-columns: 1fr;
             height: auto;
-            margin-bottom: calc(2*$fs-huge);
+            margin-bottom: calc(6*$fs-huge);
+            margin-top: calc(4*$fs-huge);
+
+            .image {
+                width: 90%;
+            }
 
             .description {
                 margin-left: 0;
+                text-align: center;
             }
         }
     }
