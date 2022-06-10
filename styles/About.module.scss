@@ -329,6 +329,7 @@
             .tech_carousel {
                 margin-top: .6em;
                 margin-bottom: calc(2*$fs-huge);
+                overflow-x: auto;
 
                 .logos_container {
                     display: grid;
