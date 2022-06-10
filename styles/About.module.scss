@@ -201,7 +201,7 @@
                 display: flex;
 
                 .logo_wrapper {
-                    margin-right: 2vw;
+                    margin-right: 4em;
                     scroll-snap-align: start;
                     display: flex;
                     flex-direction: column;
@@ -214,8 +214,8 @@
                     span {
                         margin-top: 1rem;
                         font-family: Neue55Roman;
-                        font-size: $fs-small;
-                        letter-spacing: calc($fs-small * $ls-normal);
+                        font-size: $fs-med;
+                        letter-spacing: calc($fs-med * $ls-normal);
                     }
                 }
                 
@@ -321,9 +321,26 @@
 
         .tech {
             margin-bottom: $fs-huge;
+
+            h1 {
+                text-align: center;
+            }
+            
             .tech_carousel {
                 margin-top: .6em;
                 margin-bottom: calc(2*$fs-huge);
+
+                .logos_container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    place-items: center;
+                    gap: 2em;
+                    .logo_wrapper {
+                        width: max-content;
+                        justify-content: space-between;
+                        margin-right: 0;
+                    }
+                }
             }
 
             .tech_description {

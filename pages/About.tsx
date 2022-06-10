@@ -20,6 +20,7 @@ const About: NextPage = () => {
     { name: "Javascript", img: "/images/icons/js_icon.svg" },
     { name: "HTML", img: "/images/icons/html_icon.svg" },
     { name: "CSS", img: "/images/icons/css_icon.svg" },
+    { name: "Next.js", img: "/images/icons/nextjs_icon.svg" },
   ];
 
   const [video, setVideo] = useState(false);
