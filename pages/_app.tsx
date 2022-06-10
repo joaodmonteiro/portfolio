@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const handleMenuClick = () => {
     if (!menuOpen) {
       setMenuOpen(true);
-      console.log("menu open");
     }
   };
 
