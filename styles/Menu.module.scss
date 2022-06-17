@@ -7,11 +7,10 @@
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: white;
     color: black;
     padding: $pad-desktop;
-    transform: translateX(100vw);
-    transition: transform .4s ease-in-out;
+    opacity: 0;
+    transition: backdrop-filter .2s ease-in-out, opacity .2s;
 
     .close_menu {
         display: flex;
@@ -33,8 +32,8 @@
 }
 
 .load_animation {
-    transform: translateX(0);
-    
+    opacity: 1;
+    backdrop-filter: blur(30px);
 }
 
 
