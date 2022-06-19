@@ -3,7 +3,19 @@
 ## Introduction
 
 This website serves as an introduction to myself and my work.
-I intend on keep updating it with the latest projects I've completed as well as tailor it to whatever stage I am in my professional journey.
+I intend on keeping it updated with the latest projects I've completed as well as tailoring it to whatever stage I am in my professional journey.
+
+## Stack
+
+- Next.js
+- Typescript
+- Sass
+
+## Deployment
+
+The website is deployed with Vercel since Next.js makes that integration really seamless.
+
+You can take a look at the [website here](https://joaodmonteiro.com)
 
 ## Getting Started
 
