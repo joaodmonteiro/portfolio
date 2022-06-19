@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
+
+## Introduction
+
+This website serves as an introduction to myself and my work.
+I intend on keep updating it with the latest projects I've completed as well as tailor it to whatever stage I am in my professional journey.
 
 ## Getting Started
 
