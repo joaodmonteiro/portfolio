@@ -32,7 +32,7 @@ const Multitrack = () => {
           <img src="/images/arrow_down.svg" alt="arrow pointing down" />
         </section>
         <section className={styles.mockup1_container}>
-          <Parallax speed={-40}>
+          <Parallax speed={-60}>
             <div className={styles.mockup1}>
               <Image
                 src={mockup}

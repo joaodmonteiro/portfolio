@@ -26,13 +26,13 @@ const RiderRotation = () => {
   return (
     <div className={styles.container}>
       <section className={styles.title_container}>
-        <Parallax speed={-15}>
+        <Parallax speed={-12}>
           <h1>Rider Rotation</h1>
         </Parallax>
       </section>
       <section className={styles.mockup1_container}>
         <div className={styles.image}>
-          <Parallax speed={15}>
+          <Parallax speed={5}>
             <Image
               src={mockup1}
               alt="Rider rotation website seen on a laptop."
