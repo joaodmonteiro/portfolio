@@ -32,8 +32,8 @@
 
     .mockup1_container {
         background-color: #0A0903;
-        // display: grid;
-        // place-items: center;
+        display: grid;
+        place-items: center;
         overflow: hidden;
 
         .mockup1 {
@@ -42,6 +42,7 @@
 
             img {
                 transform: translateX(7%);
+                width: 100%;
             }
         }
     }

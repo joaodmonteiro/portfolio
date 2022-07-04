@@ -15,16 +15,14 @@ const Projects: NextPage = () => {
           <a>
             {" "}
             <div className={`${styles.image_container} ${styles.multitrack}`}>
-              <Parallax speed={-3}>
-                <Image
-                  src={multitrackMockup}
-                  alt="Multitrack website seen on a laptop and a smartphone."
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  objectFit="contain"
-                />
-              </Parallax>
+              <Image
+                src={multitrackMockup}
+                alt="Multitrack website seen on a laptop and a smartphone."
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
+              />
             </div>
           </a>
         </Link>
@@ -35,16 +33,14 @@ const Projects: NextPage = () => {
           <a>
             <div
               className={`${styles.image_container} ${styles.riderrotation}`}>
-              <Parallax speed={-3}>
-                <Image
-                  src={riderRotationMockup}
-                  alt="Rider rotation website seen on a laptop."
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  objectFit="contain"
-                />
-              </Parallax>
+              <Image
+                src={riderRotationMockup}
+                alt="Rider rotation website seen on a laptop."
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
+              />
             </div>
           </a>
         </Link>

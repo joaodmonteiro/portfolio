@@ -63,13 +63,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <div>
-        <Nav handleMenuClick={handleMenuClick} />
         <ParallaxProvider>
-          <Component {...pageProps} />
-        </ParallaxProvider>
+          <Nav handleMenuClick={handleMenuClick} />
 
-        <Footer />
-        {menuOpen && <Menu closeMenu={closeMenu} />}
+          <Component {...pageProps} />
+
+          <Footer />
+          {menuOpen && <Menu closeMenu={closeMenu} />}
+        </ParallaxProvider>
       </div>
     </>
   );

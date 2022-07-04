@@ -33,14 +33,15 @@ const Multitrack = () => {
         </section>
         <section className={styles.mockup1_container}>
           <div className={styles.mockup1}>
-            <Parallax speed={-40}>
-              <Image
+            <Parallax speed={-20}>
+              {/* <Image
                 src={mockup}
                 alt="Multitrack website seen on a laptop and smartphone."
                 width="100%"
                 height="100%"
                 layout="responsive"
-                objectFit="contain"></Image>
+                objectFit="contain"></Image> */}
+              <img src="/images/multitrack_mockup.png" alt="" />
             </Parallax>
           </div>
         </section>
