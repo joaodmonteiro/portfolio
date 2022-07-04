@@ -32,8 +32,8 @@ const Multitrack = () => {
           <img src="/images/arrow_down.svg" alt="arrow pointing down" />
         </section>
         <section className={styles.mockup1_container}>
-          <div className={styles.mockup1}>
-            <Parallax speed={-40}>
+          <Parallax speed={-40}>
+            <div className={styles.mockup1}>
               <Image
                 src={mockup}
                 alt="Multitrack website seen on a laptop and smartphone."
@@ -41,8 +41,8 @@ const Multitrack = () => {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"></Image>
-            </Parallax>
-          </div>
+            </div>
+          </Parallax>
         </section>
         <section className={styles.information}>
           <div className={styles.description}>
