@@ -6,6 +6,7 @@ import Image from "next/image";
 import photo from "../public/images/BW_photo2.jpg";
 import gameScreenshot from "../public/images/game2.png";
 import playIcon from "../public/images/icons/play_icon.png";
+import { Parallax } from "react-scroll-parallax";
 
 const About: NextPage = () => {
   const tech = [
@@ -46,13 +47,15 @@ const About: NextPage = () => {
           <img src="images/arrow_down.svg" alt="arrow pointing down."></img>
         </div>
         <div className={styles.picture_container}>
-          <Image
-            src={photo}
-            width="100%"
-            height="70%"
-            alt="Photo of João Monteiro"
-            layout="responsive"
-            objectFit="contain"></Image>
+          <Parallax speed={-4}>
+            <Image
+              src={photo}
+              width="100%"
+              height="67%"
+              alt="Photo of João Monteiro"
+              layout="responsive"
+              objectFit="contain"></Image>
+          </Parallax>
         </div>
       </section>
 

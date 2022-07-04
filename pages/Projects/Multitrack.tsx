@@ -7,6 +7,7 @@ import Project_Links from "../../components/Project_Links";
 import Image from "next/image";
 import mockup from "../../public/images/multitrack_mockup.png";
 import androidMockup from "../../public/images/android_mockup.png";
+import { Parallax } from "react-scroll-parallax";
 
 const Multitrack = () => {
   const stack = [
@@ -32,13 +33,15 @@ const Multitrack = () => {
         </section>
         <section className={styles.mockup1_container}>
           <div className={styles.mockup1}>
-            <Image
-              src={mockup}
-              alt="Multitrack website seen on a laptop and smartphone."
-              width="100%"
-              height="100%"
-              layout="responsive"
-              objectFit="contain"></Image>
+            <Parallax speed={-40}>
+              <Image
+                src={mockup}
+                alt="Multitrack website seen on a laptop and smartphone."
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"></Image>
+            </Parallax>
           </div>
         </section>
         <section className={styles.information}>

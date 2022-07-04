@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "../components/Footer";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,7 +64,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div>
         <Nav handleMenuClick={handleMenuClick} />
-        <Component {...pageProps} />
+        <ParallaxProvider>
+          <Component {...pageProps} />
+        </ParallaxProvider>
+
         <Footer />
         {menuOpen && <Menu closeMenu={closeMenu} />}
       </div>

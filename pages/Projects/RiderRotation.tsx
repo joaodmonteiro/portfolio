@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import mockup1 from "../../public/images/riderrotation_mockup.png";
 import mockup2 from "../../public/images/riderrotation_mockup2.png";
+import { Parallax } from "react-scroll-parallax";
 
 const RiderRotation = () => {
   const stack = [
@@ -25,17 +26,21 @@ const RiderRotation = () => {
   return (
     <div className={styles.container}>
       <section className={styles.title_container}>
-        <h1>Rider Rotation</h1>
+        <Parallax speed={-15}>
+          <h1>Rider Rotation</h1>
+        </Parallax>
       </section>
       <section className={styles.mockup1_container}>
         <div className={styles.image}>
-          <Image
-            src={mockup1}
-            alt="Rider rotation website seen on a laptop."
-            width="100%"
-            height="100%"
-            layout="responsive"
-            objectFit="contain"></Image>
+          <Parallax speed={15}>
+            <Image
+              src={mockup1}
+              alt="Rider rotation website seen on a laptop."
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"></Image>
+          </Parallax>
         </div>
         <div className={styles.description}>
           Rider Rotation is a dashboard web application that I made for

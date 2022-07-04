@@ -1,18 +1,21 @@
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
 import heroPic from "../public/images/BW_portfolio_pic_square.jpg";
+import { Parallax } from "react-scroll-parallax";
 
 const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.picture_container}>
-        <Image
-          src={heroPic}
-          width="100%"
-          height="100%"
-          layout="responsive"
-          objectFit="contain"
-          alt="Photo of João Monteiro"></Image>
+        <Parallax speed={-4}>
+          <Image
+            src={heroPic}
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"
+            alt="Photo of João Monteiro"></Image>
+        </Parallax>
       </div>
       <div className={styles.bio_name}>João Monteiro</div>
       <div className={styles.bio_info}>Web Developer, Based in London</div>

@@ -5,6 +5,7 @@ import ScrollContainer from "./ScrollContainer";
 import Image from "next/image";
 import multitrackMockup from "../public/images/multitrack_mockup.png";
 import riderRotationMockup from "../public/images/riderrotation_mockup.png";
+import { Parallax } from "react-scroll-parallax";
 
 const Projects: NextPage = () => {
   return (
@@ -14,14 +15,16 @@ const Projects: NextPage = () => {
           <a>
             {" "}
             <div className={`${styles.image_container} ${styles.multitrack}`}>
-              <Image
-                src={multitrackMockup}
-                alt="Multitrack website seen on a laptop and a smartphone."
-                width="100%"
-                height="100%"
-                layout="responsive"
-                objectFit="contain"
-              />
+              <Parallax speed={-3}>
+                <Image
+                  src={multitrackMockup}
+                  alt="Multitrack website seen on a laptop and a smartphone."
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="contain"
+                />
+              </Parallax>
             </div>
           </a>
         </Link>
@@ -32,14 +35,16 @@ const Projects: NextPage = () => {
           <a>
             <div
               className={`${styles.image_container} ${styles.riderrotation}`}>
-              <Image
-                src={riderRotationMockup}
-                alt="Rider rotation website seen on a laptop."
-                width="100%"
-                height="100%"
-                layout="responsive"
-                objectFit="contain"
-              />
+              <Parallax speed={-3}>
+                <Image
+                  src={riderRotationMockup}
+                  alt="Rider rotation website seen on a laptop."
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="contain"
+                />
+              </Parallax>
             </div>
           </a>
         </Link>
