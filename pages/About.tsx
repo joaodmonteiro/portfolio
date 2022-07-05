@@ -47,7 +47,7 @@ const About: NextPage = () => {
           <img src="images/arrow_down.svg" alt="arrow pointing down."></img>
         </div>
         <div className={styles.picture_container}>
-          <Parallax speed={-4}>
+          <Parallax speed={-2}>
             <Image
               src={photo}
               width="100%"
