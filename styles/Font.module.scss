@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+
+.container {
+    margin: 0 $pad-desktop;
+
+    .word_container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        .word {
+            display: flex;
+            justify-content: center;
+            font-size: calc(4*$fs-huge);
+            list-style: none;
+            font-family: 'Roboto Flex';
+    
+            li {
+                transition: font-stretch .5s, font-weight .5s, transform 1s;
+                white-space: pre-wrap;
+    
+                &:hover {
+                    font-stretch: 151%;
+                    font-weight: 800;
+                    font-variation-settings: 'slnt' 10;
+                }
+            }
+
+            .animated {
+                font-stretch: 151%;
+                  font-weight: 800;
+                  font-variation-settings: 'slnt' 10;
+                  transform: translateY(-60px);
+            }
+        }
+    }
+
+    .description {
+        font-size: $fs-med;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        margin-bottom: calc(2 * $fs-huge);
+
+        p {
+            max-width: 44ch;
+            text-align: center;
+        }
+    }
+    
+}
+

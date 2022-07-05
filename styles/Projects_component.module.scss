@@ -6,6 +6,7 @@
     grid-template-columns: repeat(2, 47.5%);
     gap: 5%;
     background-color: rgb(255, 255, 255);
+    margin-bottom: calc(2*$fs-huge);
 
     .project_container {
         display: flex;
@@ -14,11 +15,11 @@
 
         .image_container {
             background-color: #D9D9D9;
-            height: calc(100vh - ($fs-med * 10));
             overflow: hidden;
             padding: 2em;
             max-width: 100%;
             height: max-content;
+            aspect-ratio: 1/1;
         }
 
         .multitrack {
@@ -34,6 +35,18 @@
             letter-spacing: calc($fs-med * $ls-normal);
             font-weight: 100;
         }
+
+        .fontwebsite {
+            display: grid;
+            place-items: center;
+            height: 100%;
+            .word {
+                font-family: 'Roboto Flex'; 
+                font-size: calc(2*$fs-huge);
+                text-align: center;
+            }
+        }
+        
     }
 }
 

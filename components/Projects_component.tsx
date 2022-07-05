@@ -48,6 +48,19 @@ const Projects: NextPage = () => {
           Rider Rotation - Dashboard Application
         </div>
       </div>
+
+      <div className={styles.project_container}>
+        <Link href="/Projects/Font">
+          <a>
+            <div className={`${styles.image_container} ${styles.fontwebsite}`}>
+              <div className={styles.word}>font.</div>
+            </div>
+          </a>
+        </Link>
+        <div className={styles.project_name}>
+          font. - Variable font previewer
+        </div>
+      </div>
     </div>
   );
 };
