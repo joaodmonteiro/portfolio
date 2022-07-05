@@ -6,7 +6,7 @@
     grid-template-columns: repeat(2, 47.5%);
     gap: 5%;
     background-color: rgb(255, 255, 255);
-    margin-bottom: calc(2*$fs-huge);
+    margin-bottom: calc(2*$pad-desktop);
 
     .project_container {
         display: flex;
@@ -58,8 +58,6 @@
 
         .project_container {
             margin-bottom: $fs-med;
-            .image_container {
-            }
         }
     }
 }
